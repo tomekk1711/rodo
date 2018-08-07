@@ -1,0 +1,39 @@
+<div class="hero-unit">
+<h1>Usuń zgodę</h1>
+<hr>
+<br><br>
+
+<%= form_for(:zgoda, :url => {:action => 'kasuj', :id=>@zgoda.id}) do |pole| %>
+
+<p> Czy na pewno mam usunąć zgodę?</p>
+
+<table class="table table-striped">
+<tr>
+<th><%= pole.label(:imie) %></th>
+<td><%= pole.text_field(:imie) %></td>
+</tr>
+<tr>
+<th><%= pole.label(:nazwisko) %></th>
+<td><%= pole.text_field(:nazwisko) %></td>
+</tr><tr>
+<th><%= pole.label(:miejscowosc) %></th>
+<td><%= pole.text_field(:miejscowosc) %></td>
+</tr><tr>
+<th><%= pole.label(:nrdomu) %></th>
+<td><%= pole.text_field(:nrdomu) %></td>
+</tr><tr>
+<th><%= pole.label(:nrmieszkania) %></th>
+<td><%= pole.text_field(:nrmieszkania) %></td>
+</tr><tr>
+<th><%= pole.label(:uwagi) %></th>
+<td><%= pole.text_field(:uwagi) %></td>
+</tr>
+</table>
+<hr>
+<br>
+<div style="text-align: center;">
+	<%= link_to("Anuluj", {:action => 'index'}, :class => 'btn btn-primary')%>
+	<%= submit_tag("Usuń", :class => 'btn  btn-danger') %>
+</div>
+<%end%>		
+</div>

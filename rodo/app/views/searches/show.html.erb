@@ -1,0 +1,38 @@
+<div class="hero-unit">
+<h1>Wyniki wyszukiwania</h1> <hr>
+    <br><br>
+
+<div style="text-align: center;">
+        <ul class="nav nav-pills">
+        <li role="presentation"  class="active"><a href="/dostep">Powrót</a></li>
+        </ul>
+    </div>
+
+<% if @search.search_udzielone.nil? %>
+<p> Nie ma takiej zgody </p>
+<%else%>
+<% @search.search_udzielone.each do |c| %>
+<br>
+
+<div style="text-align: left;">
+<table class="table table-striped">
+
+<tr>
+    <th>Imię:</th>
+    <td><%= c.imie %></td>
+  
+  
+    <th>Nazwisko:</th>
+    <td><%= c.nazwisko %></td>
+
+    <th>Miejscowość:</th>
+    <td><%= c.miejscowosc %></td>
+ 
+    <th>Nr domu:</th>
+    <td><%= c.nrdomu %></td>
+  </tr>
+ </table>
+</div>
+<%end%>
+<% end %>
+</div>

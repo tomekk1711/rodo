@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>RODO_1.0</title>
+	<%= stylesheet_link_tag('application', :media => 'all' ) %>
+	<%= javascript_include_tag('application') %>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+ <!-- menu -->
+    <div class="navbar navbar-default navbar-fixed-top" role="navigation">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+            <span class="sr-only"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>         
+          <a class="navbar-brand logob" href="#"></a>
+        </div>
+        <ul class="nav navbar-nav navbar-right">
+        <li><a href="/searches/new">Szukaj</a></li>
+        <li><a href="/zgodas">Zgody</a></li>
+        <li><a href="/uzytkowniks">Użytkownicy</a></li>
+        <li><a href="/dostep/logout">Wyloguj</a></li>
+              </ul>
+          </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+<!-- główna -->
+<div class="container">
+  <% if !flash[:notice].blank? %>
+  <div class="alert alert-success" style="text-align: center;">
+    <%= flash[:notice] %>
+  </div>
+
+
+
+  
+  <% end %>
+  	<%= yield %>
+</div>
+
+  
+  
+<!-- stopka -->
+    <div id="footer">
+      <div class="container">
+        <p class="text-muted">
+        	TK_2018 &copy; <a href="#" target="_blank"></a>
+        </p>
+      </div>
+    </div>
+
+</body>
+</html>

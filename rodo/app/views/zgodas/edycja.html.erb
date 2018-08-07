@@ -1,0 +1,13 @@
+<div class="hero-unit">
+<h1>Edycja zgody</h1>
+<hr>
+<br><br>
+<%= form_for(:zgoda, :url => {:action => 'aktualizuj', :id=>@zgoda.id}) do |pole| %>
+<%= render(:partial => "form", :locals => {:pole => pole}) %>
+<hr>
+<br>
+<div style="text-align: center;">
+	<%= link_to("Anuluj", {:action => 'index'}, :class => 'btn btn-primary')%>
+	<%= submit_tag("Aktualizuj", :class => 'btn  btn-danger') %>
+<%end%>	
+</div>	

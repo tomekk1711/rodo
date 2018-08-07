@@ -1,0 +1,28 @@
+<div class="hero-unit">
+    <h1>Wyszukiwanie</h1>
+    <hr>
+    <br><br>
+    <div style="text-align: center;">
+        <ul class="nav nav-pills">
+        <li role="presentation"  class="active"><a href="/dostep">Powrót</a></li>
+        </ul>
+    </div>
+    <br><br>
+        <%= form_for @search, html: {class: "pure-form"} do |s| %>
+
+    
+    <div style="text-align: center;" class="field">
+        <%= s.label :nazwisko %> <br>
+        <%= s.text_field :nazwisko %>
+    </div>
+
+    <div style="text-align: center;" class="field">
+        <%= s.label :miejscowosc %> <br>
+        <%= s.text_field :miejscowosc %>
+    </div>
+   <br><br>
+    <div style="text-align: center;">
+    <%= s.submit "Szukaj", class: "btn btn-lg btn-success" %> </div>
+
+    <% end %>
+</div>

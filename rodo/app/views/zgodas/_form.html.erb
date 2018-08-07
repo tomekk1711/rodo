@@ -1,0 +1,29 @@
+<table class="table table-striped">
+<tr>
+<th><%= pole.label(:imie) %></th>
+<td><%= pole.text_field(:imie) %></td>
+</tr>
+<tr>
+<th><%= pole.label(:nazwisko) %></th>
+<td><%= pole.text_field(:nazwisko) %></td>
+</tr><tr>
+<th><%= pole.label(:miejscowosc) %></th>
+<td><%= pole.text_field(:miejscowosc) %></td>
+</tr><tr>
+<th><%= pole.label(:nrdomu) %></th>
+<td><%= pole.text_field(:nrdomu) %></td>
+</tr><tr>
+<th><%= pole.label(:nrmieszkania) %></th>
+<td><%= pole.text_field(:nrmieszkania) %></td>
+</tr><tr>
+<th><%= pole.label(:potwierdzenie, "Potwierdzenie złożonej zgody") %></th>
+<td><%= pole.check_box(:potwierdzenie) %></td>
+</tr><tr>
+<th><%= pole.label(:uwagi) %></th>
+<td><%= pole.text_field(:uwagi) %></td>
+</tr><tr>
+<th><%= pole.label(:pozycja) %></th>
+<td><%= pole.select(:pozycja, 1..@licznik) %></td>
+</tr>
+
+</table>

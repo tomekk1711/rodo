@@ -1,0 +1,46 @@
+<div class="hero-unit">
+<h1>Pokaż zgodę</h1>
+<hr>
+<br><br>
+<table class="table table-striped">
+<tr>
+<th>Imię</th>
+<td><%=@zgoda.imie %></td>
+</tr>
+<tr>
+<th>Nazwisko</th>
+<td> <%=@zgoda.nazwisko %></td>
+</tr><tr>
+<th>Miejscowość</th>
+<td> <%=@zgoda.miejscowosc%></td>
+</tr><tr>
+<th>Nr domu</th>
+<td><%= @zgoda.nrdomu %></td>
+</tr><tr>
+<th>Nr mieszkania</th>
+<td><%= @zgoda.nrmieszkania %></td>
+</tr><tr>
+<th>Potwierdzenie zgody</th>
+<td> <%=@zgoda.potwierdzenie ? 'Tak' : 'Nie' %></td>
+</tr><tr>
+<th>Uwagi</th>
+<td> <%=@zgoda.uwagi %></td>
+</tr><tr>
+<th>Pozycja</th>
+<td><%=@zgoda.pozycja%></td>
+</tr>
+<tr>
+<th>Utworzona</th>
+<td><%=@zgoda.created_at%></td>
+</tr>
+<tr>
+<th>Zmieniona</th>
+<td><%=@zgoda.updated_at%></td>
+</tr>
+</table>
+<hr>
+<div style="text-align: center;">
+	<%= link_to("Powrót", {:action => 'index'}, :class => 'btn btn-primary')%>
+</div>
+</div>
+    

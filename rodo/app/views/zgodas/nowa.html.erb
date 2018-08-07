@@ -1,0 +1,14 @@
+<div class="hero-unit">
+<h1>Nowa zgoda</h1>
+<hr>
+<br><br>
+<%= form_for(:zgoda, :url => {:action => 'utworz'}) do |pole| %>
+<%= render(:partial => "form", :locals => {:pole => pole}) %>
+<hr>
+<br>
+<div style="text-align: center;">
+	<%= link_to("Powrót", {:action => 'index'}, :class => 'btn btn-primary')%>
+	<%= submit_tag("Utwórz", :class => 'btn  btn-warning') %>
+</div>
+<%end%>		
+</div>
