@@ -1,4 +1,4 @@
-<div class="hero-unit">
+<div style="width: 80%; margin: 0 auto;";"class="hero-unit">
 <h1>Wyniki wyszukiwania</h1> <hr>
     <br><br>
 
@@ -8,8 +8,10 @@
         </ul>
     </div>
 
+    <br><br> <br><br>
 <% if @search.search_udzielone.nil? %>
-<p> Nie ma takiej zgody </p>
+
+<p style="text-align:center"> Nie ma takiej zgody </p>
 <%else%>
 <% @search.search_udzielone.each do |c| %>
 <br>
@@ -33,6 +35,6 @@
   </tr>
  </table>
 </div>
-<%end%>
+<% end %>
 <% end %>
 </div>

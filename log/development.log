@@ -16875,3 +16875,264 @@ Processing by DostepController#login as HTML
 Completed 200 OK in 1149ms (Views: 1145.6ms | ActiveRecord: 0.0ms)
 
 
+DEPRECATION WARNING: Using a dynamic :controller segment in a route is deprecated and will be removed in Rails 6.0. (called from block in <main> at /home/user/www/rodo/config/routes.rb:6)
+DEPRECATION WARNING: Using a dynamic :action segment in a route is deprecated and will be removed in Rails 6.0. (called from block in <main> at /home/user/www/rodo/config/routes.rb:6)
+DEPRECATION WARNING: Using a dynamic :controller segment in a route is deprecated and will be removed in Rails 6.0. (called from block in <main> at /home/user/www/rodo/config/routes.rb:6)
+DEPRECATION WARNING: Using a dynamic :action segment in a route is deprecated and will be removed in Rails 6.0. (called from block in <main> at /home/user/www/rodo/config/routes.rb:6)
+Started GET "/" for ::1 at 2019-07-16 21:42:27 +0200
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/user/.rvm/gems/ruby-2.3.3/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+  
+ActionController::RoutingError (uninitialized constant PublicController):
+  
+bootsnap (1.4.4) lib/bootsnap/load_path_cache/core_ext/active_support.rb:79:in `block in load_missing_constant'
+bootsnap (1.4.4) lib/bootsnap/load_path_cache/core_ext/active_support.rb:8:in `without_bootsnap_cache'
+bootsnap (1.4.4) lib/bootsnap/load_path_cache/core_ext/active_support.rb:79:in `rescue in load_missing_constant'
+bootsnap (1.4.4) lib/bootsnap/load_path_cache/core_ext/active_support.rb:59:in `load_missing_constant'
+activesupport (5.2.3) lib/active_support/inflector/methods.rb:283:in `const_get'
+activesupport (5.2.3) lib/active_support/inflector/methods.rb:283:in `block in constantize'
+activesupport (5.2.3) lib/active_support/inflector/methods.rb:281:in `each'
+activesupport (5.2.3) lib/active_support/inflector/methods.rb:281:in `inject'
+activesupport (5.2.3) lib/active_support/inflector/methods.rb:281:in `constantize'
+actionpack (5.2.3) lib/action_dispatch/http/request.rb:88:in `controller_class_for'
+actionpack (5.2.3) lib/action_dispatch/http/request.rb:81:in `controller_class'
+actionpack (5.2.3) lib/action_dispatch/routing/route_set.rb:46:in `controller'
+actionpack (5.2.3) lib/action_dispatch/routing/route_set.rb:32:in `serve'
+actionpack (5.2.3) lib/action_dispatch/journey/router.rb:52:in `block in serve'
+actionpack (5.2.3) lib/action_dispatch/journey/router.rb:35:in `each'
+actionpack (5.2.3) lib/action_dispatch/journey/router.rb:35:in `serve'
+actionpack (5.2.3) lib/action_dispatch/routing/route_set.rb:840:in `call'
+rack (2.0.7) lib/rack/tempfile_reaper.rb:15:in `call'
+rack (2.0.7) lib/rack/etag.rb:25:in `call'
+rack (2.0.7) lib/rack/conditional_get.rb:25:in `call'
+rack (2.0.7) lib/rack/head.rb:12:in `call'
+actionpack (5.2.3) lib/action_dispatch/http/content_security_policy.rb:18:in `call'
+rack (2.0.7) lib/rack/session/abstract/id.rb:232:in `context'
+rack (2.0.7) lib/rack/session/abstract/id.rb:226:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/cookies.rb:670:in `call'
+activerecord (5.2.3) lib/active_record/migration.rb:559:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
+activesupport (5.2.3) lib/active_support/callbacks.rb:98:in `run_callbacks'
+actionpack (5.2.3) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/debug_exceptions.rb:61:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.3) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.3) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.3) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.7) lib/rack/method_override.rb:22:in `call'
+rack (2.0.7) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.3) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.7) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.3) lib/rails/engine.rb:524:in `call'
+puma (3.12.1) lib/puma/configuration.rb:227:in `call'
+puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
+puma (3.12.1) lib/puma/server.rb:474:in `process_client'
+puma (3.12.1) lib/puma/server.rb:334:in `block in run'
+puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/dostep" for ::1 at 2019-07-16 21:42:49 +0200
+Processing by DostepController#index as HTML
+Redirected to http://localhost:3000/dostep/login
+Filter chain halted as :sprawdz_logowanie rendered or redirected
+Completed 302 Found in 4ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/dostep/login" for ::1 at 2019-07-16 21:42:49 +0200
+Processing by DostepController#login as HTML
+  Rendering dostep/login.html.erb within layouts/admin
+  Rendered dostep/login.html.erb within layouts/admin (4.9ms)
+Completed 200 OK in 845ms (Views: 841.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/searches/new" for ::1 at 2019-07-16 21:42:55 +0200
+Processing by SearchesController#new as HTML
+  Rendering searches/new.html.erb within layouts/application
+  Rendered searches/new.html.erb within layouts/application (39.4ms)
+Completed 200 OK in 261ms (Views: 190.1ms | ActiveRecord: 7.3ms)
+
+
+Started GET "/searches/new" for ::1 at 2019-07-16 21:42:55 +0200
+Processing by SearchesController#new as HTML
+  Rendering searches/new.html.erb within layouts/application
+  Rendered searches/new.html.erb within layouts/application (6.0ms)
+Completed 200 OK in 116ms (Views: 112.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/dostep" for ::1 at 2019-07-16 21:49:41 +0200
+Processing by DostepController#index as HTML
+Redirected to http://localhost:3000/dostep/login
+Filter chain halted as :sprawdz_logowanie rendered or redirected
+Completed 302 Found in 2ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/dostep/login" for ::1 at 2019-07-16 21:49:41 +0200
+Processing by DostepController#login as HTML
+  Rendering dostep/login.html.erb within layouts/admin
+  Rendered dostep/login.html.erb within layouts/admin (3.3ms)
+Completed 200 OK in 127ms (Views: 124.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/dostep" for ::1 at 2019-07-16 21:49:41 +0200
+Processing by DostepController#index as HTML
+Redirected to http://localhost:3000/dostep/login
+Filter chain halted as :sprawdz_logowanie rendered or redirected
+Completed 302 Found in 2ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/dostep/login" for ::1 at 2019-07-16 21:49:41 +0200
+Processing by DostepController#login as HTML
+  Rendering dostep/login.html.erb within layouts/admin
+  Rendered dostep/login.html.erb within layouts/admin (2.8ms)
+Completed 200 OK in 97ms (Views: 94.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/zgodas" for ::1 at 2019-07-16 21:49:49 +0200
+Processing by ZgodasController#index as HTML
+Redirected to http://localhost:3000/dostep/login
+Filter chain halted as :sprawdz_logowanie rendered or redirected
+Completed 302 Found in 2ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/dostep/login" for ::1 at 2019-07-16 21:49:49 +0200
+Processing by DostepController#login as HTML
+  Rendering dostep/login.html.erb within layouts/admin
+  Rendered dostep/login.html.erb within layouts/admin (2.8ms)
+Completed 200 OK in 107ms (Views: 104.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/zgodas" for ::1 at 2019-07-16 21:49:54 +0200
+Processing by ZgodasController#index as HTML
+Redirected to http://localhost:3000/dostep/login
+Filter chain halted as :sprawdz_logowanie rendered or redirected
+Completed 302 Found in 2ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/dostep/login" for ::1 at 2019-07-16 21:49:54 +0200
+Processing by DostepController#login as HTML
+  Rendering dostep/login.html.erb within layouts/admin
+  Rendered dostep/login.html.erb within layouts/admin (2.7ms)
+Completed 200 OK in 103ms (Views: 99.5ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/dostep/logowanie" for ::1 at 2019-07-16 21:50:05 +0200
+Processing by DostepController#logowanie as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"NQpb1ZSOo4Fs+uGrgtL8Hj2zqQPR3nTLBC48noXifgyLcMR/J0z5bJlOkwFzIBfCcrMgGKHxsvoZYZN0Tpoq3w==", "uzytkownik"=>"admin", "haslo"=>"123456789", "commit"=>"Zaloguj"}
+  [1m[36mUzytkownik Load (0.4ms)[0m  [1m[34mSELECT  "uzytkowniks".* FROM "uzytkowniks" WHERE "uzytkowniks"."uzytkownik" = ? ORDER BY "uzytkowniks"."id" ASC LIMIT ?[0m  [["uzytkownik", "admin"], ["LIMIT", 1]]
+  ↳ app/controllers/dostep_controller.rb:16
+Redirected to http://localhost:3000/admin
+Completed 302 Found in 133ms (ActiveRecord: 2.0ms)
+
+
+Started GET "/admin" for ::1 at 2019-07-16 21:50:05 +0200
+Processing by DostepController#index as HTML
+  Rendering dostep/index.html.erb within layouts/admin
+  Rendered dostep/index.html.erb within layouts/admin (0.8ms)
+Completed 200 OK in 105ms (Views: 102.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/zgodas" for ::1 at 2019-07-16 21:50:09 +0200
+Processing by ZgodasController#index as HTML
+  Rendering zgodas/index.html.erb within layouts/admin
+  [1m[36mZgoda Load (0.6ms)[0m  [1m[34mSELECT "zgodas".* FROM "zgodas" ORDER BY zgodas.pozycja ASC[0m
+  ↳ app/views/zgodas/index.html.erb:27
+  Rendered zgodas/index.html.erb within layouts/admin (49.7ms)
+Completed 200 OK in 139ms (Views: 127.4ms | ActiveRecord: 1.9ms)
+
+
+Started GET "/searches/new" for ::1 at 2019-07-16 21:53:40 +0200
+Processing by SearchesController#new as HTML
+  Rendering searches/new.html.erb within layouts/application
+  Rendered searches/new.html.erb within layouts/application (8.0ms)
+Completed 200 OK in 128ms (Views: 119.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/searches/new" for ::1 at 2019-07-16 21:53:40 +0200
+Processing by SearchesController#new as HTML
+  Rendering searches/new.html.erb within layouts/application
+  Rendered searches/new.html.erb within layouts/application (4.7ms)
+Completed 200 OK in 102ms (Views: 99.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/searches/new" for ::1 at 2019-07-16 21:53:43 +0200
+Processing by SearchesController#new as HTML
+  Rendering searches/new.html.erb within layouts/application
+  Rendered searches/new.html.erb within layouts/application (5.5ms)
+Completed 200 OK in 125ms (Views: 123.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/searches/new" for ::1 at 2019-07-16 21:54:43 +0200
+Processing by SearchesController#new as HTML
+  Rendering searches/new.html.erb within layouts/application
+  Rendered searches/new.html.erb within layouts/application (8.3ms)
+Completed 200 OK in 101ms (Views: 98.2ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/searches" for ::1 at 2019-07-16 21:55:45 +0200
+Processing by SearchesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"SszuVv49iH4j5YNoMg5L1SiWGwWObG4AMLthCgGshBYiMD06mHvW5iOQOcqz2+7tn5bO0DmnmSKI3LatsYyiYA==", "search"=>{"nazwisko"=>"test", "miejscowosc"=>""}, "commit"=>"Szukaj"}
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/searches_controller.rb:9
+  [1m[36mSearch Create (0.7ms)[0m  [1m[32mINSERT INTO "searches" ("nazwisko", "miejscowosc", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["nazwisko", "test"], ["miejscowosc", ""], ["created_at", "2019-07-16 19:55:45.317155"], ["updated_at", "2019-07-16 19:55:45.317155"]]
+  ↳ app/controllers/searches_controller.rb:9
+  [1m[35m (7.5ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/searches_controller.rb:9
+Redirected to http://localhost:3000/searches/148
+Completed 302 Found in 18ms (ActiveRecord: 8.4ms)
+
+
+Started GET "/searches/148" for ::1 at 2019-07-16 21:55:45 +0200
+Processing by SearchesController#show as HTML
+  Parameters: {"id"=>"148"}
+  [1m[36mSearch Load (0.3ms)[0m  [1m[34mSELECT  "searches".* FROM "searches" WHERE "searches"."id" = ? LIMIT ?[0m  [["id", 148], ["LIMIT", 1]]
+  ↳ app/controllers/searches_controller.rb:14
+  Rendering searches/show.html.erb within layouts/application
+  Rendered searches/show.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 102ms (Views: 96.2ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/searches/148" for ::1 at 2019-07-16 21:56:16 +0200
+Processing by SearchesController#show as HTML
+  Parameters: {"id"=>"148"}
+  [1m[36mSearch Load (0.4ms)[0m  [1m[34mSELECT  "searches".* FROM "searches" WHERE "searches"."id" = ? LIMIT ?[0m  [["id", 148], ["LIMIT", 1]]
+  ↳ app/controllers/searches_controller.rb:14
+  Rendering searches/show.html.erb within layouts/application
+  Rendered searches/show.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 100ms (Views: 95.9ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/searches/148" for ::1 at 2019-07-16 21:57:31 +0200
+Processing by SearchesController#show as HTML
+  Parameters: {"id"=>"148"}
+  [1m[36mSearch Load (0.2ms)[0m  [1m[34mSELECT  "searches".* FROM "searches" WHERE "searches"."id" = ? LIMIT ?[0m  [["id", 148], ["LIMIT", 1]]
+  ↳ app/controllers/searches_controller.rb:14
+  Rendering searches/show.html.erb within layouts/application
+  Rendered searches/show.html.erb within layouts/application (2.3ms)
+Completed 200 OK in 121ms (Views: 116.7ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/dostep" for ::1 at 2019-07-16 21:57:38 +0200
+Processing by DostepController#index as HTML
+  Rendering dostep/index.html.erb within layouts/admin
+  Rendered dostep/index.html.erb within layouts/admin (0.7ms)
+Completed 200 OK in 106ms (Views: 96.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/dostep" for ::1 at 2019-07-16 21:57:38 +0200
+Processing by DostepController#index as HTML
+  Rendering dostep/index.html.erb within layouts/admin
+  Rendered dostep/index.html.erb within layouts/admin (0.7ms)
+Completed 200 OK in 90ms (Views: 87.0ms | ActiveRecord: 0.0ms)
+
+
