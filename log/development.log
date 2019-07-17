@@ -17136,3 +17136,12 @@ Processing by DostepController#index as HTML
 Completed 200 OK in 90ms (Views: 87.0ms | ActiveRecord: 0.0ms)
 
 
+Started GET "/zgodas" for ::1 at 2019-07-16 22:02:18 +0200
+Processing by ZgodasController#index as HTML
+  Rendering zgodas/index.html.erb within layouts/admin
+  [1m[36mZgoda Load (0.9ms)[0m  [1m[34mSELECT "zgodas".* FROM "zgodas" ORDER BY zgodas.pozycja ASC[0m
+  ↳ app/views/zgodas/index.html.erb:27
+  Rendered zgodas/index.html.erb within layouts/admin (25.4ms)
+Completed 200 OK in 122ms (Views: 118.1ms | ActiveRecord: 0.9ms)
+
+
