@@ -5,8 +5,7 @@ class Search < ApplicationRecord
    udzielone = Zgoda.all
 
    
-   udzielone = udzielone.where(["nazwisko LIKE ?", "%#{nazwisko}%"]) if nazwisko.present?
-    udzielone = udzielone.where(["miejscowosc LIKE ?", "%#{miejscowosc}%"]) if miejscowosc.present?
+   udzielone = udzielone.where(["nazwisko LIKE ?", "%#{nazwisko}%"]) if nazwisko.present udzielone = udzielone.where(["miejscowosc LIKE ?", "%#{miejscowosc}%"]) if miejscowosc.present?
     
     
 end
